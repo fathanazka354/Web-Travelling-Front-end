@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Datetime -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./js/build/jquery.datetimepicker.min.css" />
+
+
+    <!-- <link rel="stylesheet" href="./lightslider-master/src/css/lightslider.css"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Slider -->
+    <link rel="stylesheet" href="./css/lightslider.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Css Custom -->
+    <link rel="stylesheet" href="./css/karimun.css">
+    <link rel="stylesheet" href="./mscbot/static/css/chat.css">
+    <title>Detail Packet</title>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Slider -->
+    <script src="./js/lightslider.js"></script>
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="./js/lightbox2-dev/dist/css/lightbox.min.css">
+    <script src="./js/lightbox2-dev/dist/js/lightbox-plus-jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- Awal Nav -->
+
+        <nav>
+            <div class="logo">
+                <a href="../index_home.html">
+                    <img src="./asset/img/brand.png" alt="">
+                </a>
+            </div>
+            <ul class="kanan">
+                <li>
+                    <a class="nav_link home " href="../index_home.html">
+                        <span><i class="fas fa-home"></i></span>
+                        Home
+                    </a>
+                </li>
+                <li class="desti">
+                    <a class="nav_link destination " href="#">
+                        <span><i class="fas fa-plane-departure"></i></span>
+                        Destinations
+                    </a>
+                    <div class="isi">
+                        <!-- <ul>
+                            <li>
+                                <a href="">Surabaya</a>
+                            </li>
+                            <li>
+                                <a href="./ibnu-Jateng/listwisata_jateng.html">JaTeng</a>
+                            </li>
+                            <li>
+                                <a href="./index_listwisata.html">Yogyakarta</a>
+                            </li>
+                            <li>
+                                <a href="">Malang</a>
+                            </li>
+                            <li>
+                                <a href="">Jepara</a>
+                            </li>
+                        </ul> -->
+                        <span>
+                            <a href="">Surabaya</a>
+                        </span>
+                        <span>
+                            <a href="../ibnu - Jateng/index_listwisata.html">JaTeng</a>
+                        </span>
+                        <span>
+                            <a href="../WAHYU-MALANG_FIX/MALANG_index_listwisata.html">Malang</a>
+                        </span>
+                        <span><a href="../index_listwisata.html">Yogyakarta</a></span>
+                        <span><a href="./index_jepara.html">Jepara</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav_link testi" href="./index_review.html">
+                        <span><i class="fas fa-users"></i></span>
+                        Testimonial
+                    </a>
+                </li>
+                <li>
+                    <a class="nav_link wishlist" href="../index_wishlist.html">
+                        <span><i class="fas fa-heart"></i></span>
+                        Wishlist
+                    </a>
+                    <span class="angka"></span>
+                </li>
+                <li class="users">
+                    <a class="nav_link user" href="#">
+                        <i class="fas fa-user user"></i> </a>
+
+                    <div class="users_isi">
+                        <div class="content_isi">
+                            <a href="../indexxxxxx_profile2.html">
+                                <span><i class="fas fa-cog"></i></span> settings
+                            </a>
+                            <a href="../index_login.html">
+                                <span><i class="fas fa-sign-out-alt"></i></span> logout
+                            </a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </li>
+                <li class="notif">
+                    <a class="nav_link notification" href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <div class="notif_isi">
+                        <a href="">
+                            <div class="row">
+                                <div class="col-md-2 display">
+                                    <span class="icon">
+                                        <i class="far fa-credit-card"></i>
+                                    </span>
+                                </div>
+                                <div class="col d-flex justify-content-start align-items-start flex-column">
+                                    <span>Notification Only for you</span>
+                                    <span class="small">Yes notification</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="row">
+                                <div class="col-md-2 display">
+                                    <span class="icon">
+                                        <i class="far fa-credit-card"></i>
+                                    </span>
+                                </div>
+                                <div class="col d-flex justify-content-start align-items-start flex-column">
+                                    <span>Notification Only for you</span>
+                                    <span class="small">Yes notification</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="row">
+                                <div class="col-md-2 display">
+                                    <span class="icon">
+                                        <i class="far fa-credit-card"></i>
+                                    </span>
+                                </div>
+                                <div class="col d-flex justify-content-start align-items-start flex-column">
+                                    <span>Notification Only for you</span>
+                                    <span class="small">Yes notification</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="row">
+                                <div class="col-md-2 display">
+                                    <span class="icon">
+                                        <i class="far fa-credit-card"></i>
+                                    </span>
+                                </div>
+                                <div class="col d-flex justify-content-start align-items-start flex-column">
+                                    <span>Notification Only for you</span>
+                                    <span class="small">Yes notification</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <span class="all_notif">
+                            <a href="">
+                                See all notification
+                            </a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Akhir Nav -->
+
+        <!-- CHAT BAR BLOCK -->
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Chat with us!
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            </button>
+
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                        onclick="heartButton()"></i>
+                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        /
+                    </li>
+                    <li>
+                        <p>Detail Packet Wisata</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Jumbotron -->
+        <section class="sec__jumbotron">
+            <div class="jumbotron backimg">
+            </div>
+        </section>
+        <!-- Jumbotron -->
+
+        <!-- Content -->
+        <section class="content1">
+            <div class="container">
+                <div class="row">
+                    <div class="col left">
+                        <h4>Karimun Jawa</h4>
+                        <div class="star">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <!-- <i class="bi bi-star-fill"></i> -->
+                            <span class="text-dark">5.0 / 5.0</span>
+                        </div>
+
+                        <div class="row free__cancel">
+                            <div class="col-md-1">
+                                <div class="icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h6>Free cancelation</h6>
+                                <p>Cancel H-3 no charge for cancelation</p>
+                            </div>
+                        </div>
+                        <div class="row shiled__virus">
+                            <div class="col-md-1">
+                                <div class="icon">
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h6>Covid Protocol</h6>
+                                <p>Vaccinated staff, Mask, Handsanitizer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 right">
+                        <div class="round">
+                            <p>3 days for</p>
+                            <h5>Rp 1.100.000 / pax</h5>
+                            <small>Incl. Taxes</small>
+                            <button type="button" class="btn" id="date">Date & Prices</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="category__list container">
+                <div class="row button__category">
+                    <div class="col-md-2">
+                        <a href="#about" type="button" class="btn btn-1 active" data-filter="about">About</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#essential" type="button" class="btn btn-2" data-filter="essential">Essential
+                            Info</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#gallery" type="button" class="btn btn-3" data-filter="gallery">Gallery</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#review" type="button" class="btn btn-4" data-filter="review">Review</a>
+
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#price" type="button" class="btn btn-5" data-filter="price">Price</a>
+                    </div>
+                </div>
+
+                <div class="round__category">
+                    <div class="row">
+                        <div class="about col activat" id="about" data-category="about">
+                            <h5>Sejarah</h5>
+                            <p>
+                                Sejarah Karimunjawa diawali dengan Syekh Amir Khasan. Beliau merupakan putra dari
+                                anggota Wali Songo yaitu Sunan Muria.
+                                Pada masa itu, Syekh Amir Khasan ditinggal pergi oleh kedua orangtuanya untuk melakukan
+                                ibadah haji. Syekh Amir Khasan pun dititipkan ke pondok pesantren yang dikelola oleh
+                                Sunan Kudus.
+                                Di pondok pesantren tersebut Syekh Amir Khasan dibimbing dan diajarkan ilmu-ilmu agama
+                                Islam. Kemudian suatu waktu Sunan Kudus ada keperluan.
+                                Sunan Kudus akhirnya memberikan mandat kepada Syekh Amir Khasan untuk sementara waktu
+                                menggantikan posisinya. Syekh Amir Khasan diminta menjadi guru mengaji atau imam di
+                                pondok.
+                                Sayangnya, sewaktu Sunan Kudus sedang pergi meninggalkan pondok Syekh Amir Khasan tidak
+                                menjalankan mandat yang diberikan. Ia justru lalai dalam menjalankan amanah dari Sunan
+                                Kudus.
+                                Sewaktu Sunan Kudus pulang ke pondok, ia mendengar kabar tersebut dari salah seorang
+                                santri. Kemudian, Sunan Kudus menegur Syekh Amir Khasan.
+                                Ketika ayah dan ibu Syekh Amir Khasan pulang dari tanah suci, kemudian mereka mendengar
+                                kabar kurang menyenangkan tersebut. Akhirnya, Syekh Amir Khasan pun diusir dan diminta
+                                meninggalkan pondok.
+                                Setelah kejadian pengusiran tersebut, akhirnya Syekh Amir Khasan benar-benar
+                                meninggalkan pondok pesantren bersama pengikut setianya. Lalu, beliau membuat rakit
+                                bambu di tepian pantai.
+                                Beliau terus mendayung rakit yang terbuat dari bambu tersebut dengan membawa bekal pepes
+                                lele. Hingga akhirnya beliau sampai ke pesisir pantai timur yang samar-samar dari
+                                kejauhan.
+                                Kemudian pada suatu hari ibu Syekh Amir Khasan merasa rindu dengan putra tercintanya.
+                                Lalu, sang ibu melihat ke puncak Gunung Muria dan melihat dari kejauhan secara
+                                samar-samar.
+                                Dalam bahasa Jawa samar-samar disebut sebagai krumun-krumun. Oleh karena itu, daerah
+                                tersebut akhirnya dinamakan Karimunjawa.
+                            </p>
+
+                        </div>
+                        <div class=" essential col" id="essential" data-category="essential">
+                            <h5>HAL-HAL YANG HARUS DIPERHATIKAN</h5>
+                            <ul>
+                                <li>Patuhi aturan prokes yang berlaku</li>
+                                <li>
+                                    Berkata yang sopan dan baik
+                                </li>
+                                <li>
+                                    Mempersiapkan peralatan pribadi, terutama obat pribadi(apabila memiliki riwayat
+                                    penyakit)
+                                </li>
+                                <li>
+                                    Dilarang merusak terumbu karang
+                                </li>
+                                <li>
+                                    Dilarang Membuang sampah dilaut
+                                </li>
+                                <li>
+                                    Jangan merusak fasilitas umum
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" gallery col" id="gallery" data-category="gallery">
+
+                            <div class="row">
+                                <div class="col">
+                                    <a href="./asset/karimun.jpg" data-lightbox="mygallery">
+                                        <img src="./asset/karimun.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="./asset/karimun1.jpg" data-lightbox="mygallery">
+                                        <img src="./asset/karimun1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="./asset/karimun2.jpg" data-lightbox="mygallery">
+                                        <img src="./asset/karimun2.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="./asset/karimun4.jpg" data-lightbox="mygallery">
+                                        <img src="./asset/karimun4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="./asset/karimun3.jpg" data-lightbox="mygallery">
+                                        <img src="./asset/karimun3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class=" review col" id="review" data-category="review">
+                            <div class="review__cont">
+                                <div class="card">
+                                    <div class="row header ">
+                                        <div class="col-md-1 ">
+                                            <img src="./asset/review.jpg" width="50px" height="50px"
+                                                class="rounded-circle" alt="">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6>Anis</h6>
+                                            <div class="star">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <!-- <i class="bi bi-star-fill"></i> -->
+                                                <span class="text-dark">5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row tanggal">
+                                        <div class="col-md-4 ">
+                                            <small>Trip to: <span class="category_id">Karimun Jawa</span></small>
+                                        </div>
+                                        <div class="col text-start">
+                                            <small>Reviewed Agustus 2020</small>
+                                        </div>
+                                    </div>
+                                    <blockquote>
+                                        Pemandangan bawah lautnya benar2 indah
+                                    </blockquote>
+                                </div>
+                                <div class="card">
+                                    <div class="row header ">
+                                        <div class="col-md-1 ">
+                                            <img src="./asset/review.jpg" width="50px" height="50px"
+                                                class="rounded-circle" alt="">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6>Bagus</h6>
+                                            <div class="star">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <!-- <i class="bi bi-star-fill"></i> -->
+                                                <span class="text-dark">5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row tanggal">
+                                        <div class="col-md-4 ">
+                                            <small>Trip to: <span class="category_id">Karimun Jawa</span></small>
+                                        </div>
+                                        <div class="col text-start">
+                                            <small>Reviewed Desember 2020</small>
+                                        </div>
+                                    </div>
+                                    <blockquote>
+                                        Pelayanannya memuaskan
+                                    </blockquote>
+                                </div>
+                                <div class="card">
+                                    <div class="row header ">
+                                        <div class="col-md-1 ">
+                                            <img src="./asset/review.jpg" width="50px" height="50px"
+                                                class="rounded-circle" alt="">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h6>Agus</h6>
+                                            <div class="star">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <!-- <i class="bi bi-star-fill"></i> -->
+                                                <span class="text-dark">5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row tanggal">
+                                        <div class="col-md-4 ">
+                                            <small>Trip to: <span class="category_id">Karimun Jawa</span></small>
+                                        </div>
+                                        <div class="col text-start">
+                                            <small>Reviewed Desember 2020</small>
+                                        </div>
+                                    </div>
+                                    <blockquote>
+                                        Terumbu karangnya menakjubkan
+                                    </blockquote>
+                                </div>
+
+                                <button class="btn">
+                                    <a href="./index_review.html" style="text-decoration: none; color: aliceblue;">
+                                        See all Review
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class=" price col" id="price" data-category="price">
+                            <div class="form">
+                                <h4>Select Participants & Date</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <select name="" id="select__user">
+                                            <option value="">
+                                                <span><i class="fas fa-user-friends"></i></span>
+                                                Adult x 1
+                                            </option>
+                                            <option value="">
+                                                <span><i class="fas fa-user-friends"></i></span>
+                                                Teeanger x 1
+                                            </option>
+                                            <option value="">
+                                                <span><i class="fas fa-user-friends"></i></span>
+                                                Kids x 1
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <input type="date">
+                                    </div>
+                                    <div class="col">
+                                        <button type="" class="btn">
+                                            <a href="./karimun_card.html"
+                                                style="color: aliceblue; text-decoration: none;">
+                                                Check Avaibility
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Partisipants</th>
+                                            <th scope="col">Start</th>
+                                            <th scope="col">.</th>
+                                            <th scope="col">Finish</th>
+                                            <th scope="col">Avaibility</th>
+                                            <th scope="col">Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td><span><i class="fas fa-user-friends"></i></span> Adult x 1</td>
+                                            <td>
+                                                <small>Selasa</small>
+                                                <p>May 24, 2021</p>
+                                            </td>
+                                            <td><i class="fas fa-arrow-right"></i></td>
+                                            <td>
+                                                <small>Jumat</small>
+                                                <p>May 27, 2021</p>
+                                            </td>
+                                            <td>
+                                                Guaranteed
+                                            </td>
+                                            <td>
+                                                <button type="" class="btn"><a href="./karimun_card.html"
+                                                        style="color: aliceblue; text-decoration: none;">
+                                                        Check Avaibility
+                                                    </a></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td><span><i class="fas fa-user-friends"></i></span> Adult x 1</td>
+                                            <td>
+                                                <small>Kamis</small>
+                                                <p>May 26, 2021</p>
+                                            </td>
+                                            <td><i class="fas fa-arrow-right"></i></td>
+                                            <td>
+                                                <small>Minggu</small>
+                                                <p>May 29, 2021</p>
+                                            </td>
+                                            <td>
+                                                Guaranteed
+                                            </td>
+                                            <td>
+                                                <button type="" class="btn"><a href="./karimun_card.html"
+                                                        style="color: aliceblue; text-decoration: none;">
+                                                        Check Avaibility
+                                                    </a></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Destination popular -->
+        <section class="destination__popular">
+            <div class="container">
+                <div class="judul">
+                    <h3>Trips you might also like</h3>
+                    <hr>
+                </div>
+
+                <div class="cards d-flex justify-content-center">
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./asset/jepara3.jpg" height="150px" class="card-img-top" alt="...">
+                                <span class="badge badge-warning">Family Packet</span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pantai Kartini</h5>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-md-6 d-flex justify-content-start flex-column">
+                                                <div class="star">
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                                    <span class="text-dark">5.0</span>
+                                                </div>
+                                                <div class="reviews text-left">
+                                                    <p>1770 Reviews</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <p class="mt-5"><small>from</small></p>
+                                                <h6><del>Rp 1.000.000</del></h6>
+                                                <p class="top__p"><small>to</small></p>
+                                                <h5>Rp 800.000</h5>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <a href="./kartini.html" class="btn btn-block btn-primary">Jump</a>
+                                </div>
+                                <div class="love">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./asset/tritip5.jpg" height="150px" class="card-img-top" alt="...">
+                                <span class="badge badge-warning">Family Packet</span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Goa Tritip</h5>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-md-6 d-flex justify-content-start flex-column">
+                                                <div class="star">
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                                    <span class="text-dark">5.0</span>
+                                                </div>
+                                                <div class="reviews text-left">
+                                                    <p>1570 Reviews</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <p class="mt-5"><small>from</small></p>
+                                                <h6><del>Rp 250.000</del></h6>
+                                                <p class="top__p"><small>to</small></p>
+                                                <h5>Rp 200.000</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="./tritip.html" class="btn btn-block btn-primary">Jump</a>
+                                </div>
+                                <div class="love">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./asset/jepara5.jpg" height="150px" class="card-img-top" alt="...">
+                                <span class="badge badge-warning">Family Packet</span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Air Terjun Nganten</h5>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-md-6 d-flex justify-content-start flex-column">
+                                                <div class="star">
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                                    <span class="text-dark">5.0</span>
+                                                </div>
+                                                <div class="reviews text-left">
+                                                    <p>1770 Reviews</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <p class="mt-5"><small>from</small></p>
+                                                <h6><del>Rp 300.000</del></h6>
+                                                <p class="top__p"><small>to</small></p>
+                                                <h5>Rp 200.000</h5>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <a href="./nganten.html" class="btn btn-block btn-primary">Jump</a>
+                                </div>
+                                <div class="love">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./asset/sreni5.jpg" height="150px" class="card-img-top" alt="...">
+                                <span class="badge badge-warning">Family Packet</span>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hutan Sreni</h5>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-md-6 d-flex justify-content-start flex-column">
+                                                <div class="star">
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <span><i class="fas fa-star star"></i></span>
+                                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                                    <span class="text-dark">5.0</span>
+                                                </div>
+                                                <div class="reviews text-left">
+                                                    <p>1770 Reviews</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <p class="mt-5"><small>from</small></p>
+                                                <h6><del>Rp 400.000</del></h6>
+                                                <p class="top__p"><small>to</small></p>
+                                                <h5>Rp 300.000</h5>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <a href="./sreni.html" class="btn btn-block btn-primary">Jump</a>
+                                </div>
+                                <div class="love">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Destination popular -->
+
+        <!-- Footer -->
+        <!-- Awal Footer -->
+        <section class=" footer__section">
+            <footer class="footer p-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Language</label>
+                                <select class="form-control mb-4" id="exampleFormControlSelect1">
+                                    <option>English (USA)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+
+                                <label for="exampleFormControlSelect1">Currency</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Indonesia (Rupiah)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <h5>Support</h5>
+                            <a href="">
+                                Contact
+
+                            </a>
+                            <a href="">
+                                Legal
+
+                            </a>
+                            <a href="">
+                                Privacy Policy
+
+                            </a>
+                            <a href="">
+                                Term of Use
+
+                            </a>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column">
+                            <h5>Company</h5>
+                            <a href="">
+                                About Us
+
+                            </a>
+                            <a href="">
+                                Media
+
+                            </a>
+                            <a href="">
+
+                                Help Center
+                            </a>
+                            <a href="">
+                                Career
+
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Get Connected</h5>
+                            <p>Jepara, Jawa Tengah</p>
+                            <p>Indonesia</p>
+                            <p>0271-2345-221</p>
+                            <p>MyNusaTour@bussiness.ac.id</p>
+                        </div>
+                    </div>
+            </footer>
+        </section>
+    </main>
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Date time -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/build/jquery.datetimepicker.full.min.js"></script>
+    <!-- <script src="./node_modules/jquery/src/jquery.js"></script>
+    <script src="./node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script> -->
+
+
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="./js/script41.js"></script>
+    <script src="./mscbot/static/scripts/chat.js"></script>
+    <script src="./mscbot/static/scripts/responses.js"></script>
+</body>
+
+</html>

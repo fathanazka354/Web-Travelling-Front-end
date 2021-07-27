@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    transition: .3s all ease-in;
+
+}
+.navbar {
+    height: 60px !important;
+    /* padding-left: 30px !important; */
+    background-color: #DCEAFF !important;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .5);
+    position: sticky;
+    z-index: 100;
+}
+.navbar .navbar-brand img {
+    height: 50px;
+}
+.navbar .nav-link .user {
+    font-size: 1.3em;
+}
+
+
+
+.success {
+    margin-top: 5vh;
+}
+
+
+.btn__home {
+    outline: none;
+    border: none;
+    width: 8em;    
+    height: 50px;
+    width: 30%;
+    padding: 10px 20px;
+    background-color: #445e86;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.btn__home:hover {
+    background-color: #292d63;
+    color: #fdfeff;
+}
+.judul h5 {
+    font-size: 2em;
+    font-weight: 600;
+}
+.judul p {
+    font-size: .9 em;
+    font-weight: 400;
+}

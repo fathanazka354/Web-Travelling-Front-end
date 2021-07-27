@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Datetime -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./js/build/jquery.datetimepicker.min.css" />
+
+
+    <!-- <link rel="stylesheet" href="./lightslider-master/src/css/lightslider.css"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Slider -->
+    <link rel="stylesheet" href="./css/lightslider.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Css Custom -->
+    <link rel="stylesheet" href="./css/styles_review.css">
+    <title>Hello, world!</title>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Slider -->
+    <script src="./js/lightslider.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- Awal Nav -->
+
+        <nav>
+            <div class="logo">
+                <a href="">
+                    <img src="./asset/img/brand.png" alt="">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a class="home" href="#">
+                        <span><i class="fas fa-home"></i></span>
+                        Home
+                    </a>
+                </li>
+                <li class="desti">
+                    <a class="destination" href="#">
+                        <span><i class="fas fa-plane-departure"></i></span>
+                        Destinations
+                    </a>
+                    <div class="isi">
+                        <ul>
+                            <li>
+                                <a href="">Surabaya</a>
+                            </li>
+                            <li>
+                                <a href="">Wonosobo</a>
+                            </li>
+                            <li>
+                                <a href="">Yogyakarta</a>
+                            </li>
+                            <li>
+                                <a href="">Malang</a>
+                            </li>
+                            <li>
+                                <a href="">Jepara</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="testi active" href="#">
+                        <span><i class="fas fa-users"></i></span>
+                        Testimonial
+                    </a>
+                </li>
+                <li>
+                    <a class="wishlist" href="#">
+                        <span><i class="fas fa-heart"></i></span>
+                        Wishlist
+                    </a>
+                </li>
+                <li class="users">
+                    <a href="#">
+                        <i class="fas fa-user user"></i> </a>
+                    <div class="isi">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        <i class="fas fa-cog"></i>
+                                    </span>
+                                    settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </span>
+                                    logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="notif">
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <!-- <div class="isi">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        <i class="fas fa-cog"></i>
+                                    </span>
+                                    settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </span>
+                                    logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Akhir Nav -->
+
+
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        /
+                    </li>
+                    <li>
+                        Testimonial
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <button class="btn btn-info btn-lg btn-chat" type="button" onclick="openChat()"> <span><i
+                    class="fas fa-comments"></i></span> Chat</button>
+        <div class="chatbox" id="chatbox">
+            <h2>Message</h2>
+            <form class="form_container" action="">
+                <textarea name="msg" id="msg" placeholder="Type Text..."></textarea>
+                <button type="submit" class="btn btn-info btn-lg btn-send">Send</button>
+                <button type="button" class="btn btn-danger btn-lg btn-close" onclick="closeChat()">Close</button>
+            </form>
+        </div>
+        <section class="content">
+            <div class="container display">
+
+                <div class="form">
+                    <label for="exampleFormControlSelect1">Example select</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>All</option>
+                        <option>Bromo</option>
+                        <option>Dieng</option>
+                    </select>
+                </div>
+
+                <div class="review__cont">
+                    <div class="card">
+                        <div class="row header ">
+                            <div class="col-md-1 ">
+                                <img src="./asset/img/review_foto.jpg" width="50px" height="50px" class="rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Abu</h6>
+                                <div class="star">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                    <span class="text-dark">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row tanggal">
+                            <div class="col-md-4 ">
+                                <small>Trip to: <span class="category">Bromo</span></small>
+                            </div>
+                            <div class="col text-start">
+                                <small>Reviewed November 2020</small>
+                            </div>
+                        </div>
+                        <blockquote>
+                            Wah Bagus banget pake website ini
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <div class="row header ">
+                            <div class="col-md-1 ">
+                                <img src="./asset/img/review_foto.jpg" width="50px" height="50px" class="rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Abu</h6>
+                                <div class="star">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                    <span class="text-dark">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row tanggal">
+                            <div class="col-md-4 ">
+                                <small>Trip to: <span class="category">Bromo</span></small>
+                            </div>
+                            <div class="col text-start">
+                                <small>Reviewed November 2020</small>
+                            </div>
+                        </div>
+                        <blockquote>
+                            Wah Bagus banget pake website ini
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <div class="row header ">
+                            <div class="col-md-1 ">
+                                <img src="./asset/img/review_foto.jpg" width="50px" height="50px" class="rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Abu</h6>
+                                <div class="star">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                    <span class="text-dark">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row tanggal">
+                            <div class="col-md-4 ">
+                                <small>Trip to: <span class="category">Bromo</span></small>
+                            </div>
+                            <div class="col text-start">
+                                <small>Reviewed November 2020</small>
+                            </div>
+                        </div>
+                        <blockquote>
+                            Wah Bagus banget pake website ini
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <div class="row header ">
+                            <div class="col-md-1 ">
+                                <img src="./asset/img/review_foto.jpg" width="50px" height="50px" class="rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Abu</h6>
+                                <div class="star">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                    <span class="text-dark">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row tanggal">
+                            <div class="col-md-4 ">
+                                <small>Trip to: <span class="category">Bromo</span></small>
+                            </div>
+                            <div class="col text-start">
+                                <small>Reviewed November 2020</small>
+                            </div>
+                        </div>
+                        <blockquote>
+                            Wah Bagus banget pake website ini
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <div class="row header ">
+                            <div class="col-md-1 ">
+                                <img src="./asset/img/review_foto.jpg" width="50px" height="50px" class="rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <h6>Abu</h6>
+                                <div class="star">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <!-- <i class="bi bi-star-fill"></i> -->
+                                    <span class="text-dark">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row tanggal">
+                            <div class="col-md-4 ">
+                                <small>Trip to: <span class="category">Bromo</span></small>
+                            </div>
+                            <div class="col text-start">
+                                <small>Reviewed November 2020</small>
+                            </div>
+                        </div>
+                        <blockquote>
+                            Wah Bagus banget pake website ini
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <!-- Awal Footer -->
+        <section class=" footer__section mt-5">
+            <footer class="footer p-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Language</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>English (USA)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+
+                                <label for="exampleFormControlSelect1">Currency</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Indonesia (Rupiah)</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Support</h5>
+                            <a href="">
+
+                            </a>
+                            <a href="">
+                                <p>Contact</p>
+
+                            </a>
+                            <a href="">
+                                <p>Legal</p>
+
+                            </a>
+                            <a href="">
+                                <p>Privacy Policy</p>
+
+                            </a>
+                            <a href="">
+                                <p>Term of Use</p>
+
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Company</h5>
+                            <a href="">
+
+                            </a>
+                            <a href="">
+                                <p>About Us</p>
+
+                            </a>
+                            <a href="">
+                                <p>Media</p>
+
+                            </a>
+                            <a href="">
+
+                                <p>Help Center</p>
+                            </a>
+                            <a href="">
+                                <p>Career</p>
+
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Get Connected</h5>
+                            <p>Sleman, Yogyakarta</p>
+                            <p>Indonesia</p>
+                            <p>0271-2345-221</p>
+                            <p>MyNusaTour@bussiness.ac.id</p>
+                        </div>
+                    </div>
+            </footer>
+        </section>
+    </main>
+    <!-- Date time -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/build/jquery.datetimepicker.full.min.js"></script>
+    <!-- <script src="./node_modules/jquery/src/jquery.js"></script>
+    <script src="./node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

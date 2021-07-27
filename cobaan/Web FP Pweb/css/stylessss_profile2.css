@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    transition: .3s all ease-in;
+
+}
+
+/* Navabar Percbann */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    float: left;
+}
+nav a img {
+    height: 60px;
+}
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 20px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+nav ul li .home.active,
+nav ul li .destination:hover,
+nav ul li .testi:hover,
+nav ul li .wishlist:hover,
+nav ul li .home:hover
+{
+    color: #fff;
+    background-color: #92BDFF;
+}
+nav.black {
+    background: rgba(20, 25, 53, 0.99);
+    color: #fff;
+    height: 80px;
+    padding: 10px 50px;
+}
+nav.black a {
+    color: #fff;
+}
+nav.black a:hover {
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+nav .users .isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-27%, -10%) ;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+}
+nav .desti .isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-40%, -10%) ;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+}
+nav .desti:hover .isi {
+    opacity: 1;
+    visibility: visible;
+}
+nav .users:hover .isi {
+    opacity: 1;
+    visibility: visible;
+}
+ul .desti .isi::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 50%;
+    /* transform: translate(20px); */
+}
+ul .users .isi::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 65px;
+    /* transform: translate(20px); */
+}
+nav .desti .isi ul {
+    display: flex;
+}
+nav .users .isi ul {
+    display: flex;
+    flex-direction: column;
+}
+nav .desti .isi ul li a:hover{
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+nav .users .isi ul li a:hover{
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+nav.black .isi ul li a{
+    /* border-bottom: 1px solid rgb(44, 44, 44); */
+    color: rgba(0,0,0, .7);
+}
+nav.black .users .isi {
+    width: 180px;
+}
+nav.black .desti .isi {
+    width: auto;
+}
+nav .wishlist.active {
+    color: #fff;
+    background-color: #92BDFF;
+}
+/* Navabar Percbann */
+
+
+
+/* Breadcrumb */
+.breadcrumb {
+    width: 100%;
+    height: 150px;
+    top: 0;
+    position: absolute;
+}
+.breadcrumb ul {
+    width: 30%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 100px;
+    left: -60px;
+}
+.breadcrumb ul li {
+    font-size: 1em;
+    font-weight: 500;
+}
+.breadcrumb ul li a {
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+}
+
+
+.tabs {
+    border: 1px solid #DCEAFF;
+    border-radius: 10px;
+}
+.tabs__sidebar {
+    width: 100%;
+    flex-shrink: 0;
+    background: #DCEAFF;
+    overflow: hidden;
+}
+.tabs__sidebar .img {
+    background: #43488f;
+    height: 150px;
+    width: 100%;
+}
+.tabs__sidebar .text {
+    position: absolute;
+    color: #fff;
+}
+.tabs__sidebar .text h5 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.tabs__sidebar .text span {
+    font-size: .9em;
+    font-weight: 500;
+}
+.tabs__button {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    background: #DCEAFF;
+}
+.tabs__button:active {
+    background: #292d63;
+}
+.tabs__button:not(:last-of-type){
+    border-bottom: .5px solid #afb2d3;
+}
+.tabs__button--active {
+    font-weight: bold;
+    border-right: 2px solid #009879;
+    background: #ddd;
+}
+.tabs__content {
+    padding: 15px;
+    font-size: .8em;
+    display: none;
+}
+.tabs__content--active {
+    display: block;
+    width: 90%;
+}
+.tabs__content > :first-child {
+    margin: 0;
+}
+
+
+
+.first__name,  .date{
+    /* position: relative; */
+    margin-top: 10px;
+}
+.form {
+    margin-top: 30vh;
+}
+.form .right h5 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.form .right .sec__contact h5, .sec__date h5{
+    margin-top: 20px;
+}
+.form .name {
+    width: 85%;
+} 
+.form .ml-5 {
+    margin-left: auto;
+}
+.form .tabs__content .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+} 
+/* .form .name, .form .tempat__lahir {
+    display: inline-block;
+} */
+/* input[type="name"], input[type="email"], input[type="text"], input[type="password"] {
+    display: block;
+}
+input[type="date"] {
+    position: absolute;
+    bottom: 17%;
+    left: 45%;
+}
+.form .email {
+    display: inline-block;
+} */
+/* .form input {
+    outline: none; */
+    /* display: block; */
+    /* border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 40px;
+    width: 300px;
+    font-size: 15px;
+} */
+
+/* .form input:focus {
+    border: 1.5px solid #1f52f9;
+}
+.form label {
+    position: relative;
+    color: #555;
+    font-size: 15px;
+    pointer-events: none;
+    left: 20px;
+    top: -30px;
+    transition: .3s all;
+}
+input:focus ~label,
+input:valid ~label{
+    top: -49px;
+    left: 17px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 10px;
+    color: #1f52f9;
+} */
+
+.form .btn__save {
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #445e86;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.right .btn__save:hover {
+    color: #fdfeff;
+    background-color: #292d63;
+}
+/* .password.active {
+    display: flex;
+}
+.billing.active {
+    display: flex;
+}
+.profile.active {
+    display: flex;
+}
+.password {
+    display: none;
+}
+.billing {
+    display: none;
+} */

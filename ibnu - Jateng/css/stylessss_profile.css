@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    transition: .3s all ease-in;
+
+}
+.navbar {
+    height: 80px !important;
+    /* padding-left: 30px !important; */
+    background-color: #DCEAFF !important;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .5);
+    position: sticky;
+    z-index: 100;
+}
+.navbar .navbar-brand img {
+    height: 50px;
+}
+.navbar .nav-link {
+    margin-left: 20px;
+}
+.navbar .nav-link .user {
+    font-size: 1.3em;
+}
+
+.card .judul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 35%;
+    top: 10%;
+    color: #fff;
+}
+.card .list-group-item{
+    cursor: pointer;
+    font-weight: 600;
+}
+.card .list-group-item:hover{
+    cursor: pointer;
+    background-color: #445e86;
+}
+.card .profile__btn {
+    background-color: #DCEAFF;
+}
+.card .profile__btn::after {
+    content:"";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #445e86;
+    height: 100%;
+    width: 5px; 
+}
+.profile__btn.active,
+.password__btn.active,
+.billing__btn.active {
+   background-color: #DCEAFF;
+   color: #000;
+}
+.profile__btn::after.active,
+.password__btn::after.active,
+.billing__btn::after.active{
+    content:"";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #445e86;
+    height: 100%;
+    width: 5px; 
+}
+.card .judul h4 {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.card .judul span {
+    font-weight: .9em;
+    font-weight: 400;
+}
+.first__name,  .date{
+    /* position: relative; */
+    margin-top: 10px;
+}
+.form {
+    margin-top: 10vh;
+}
+.form .right h5 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.form .right .sec__contact h5, .sec__date h5{
+    margin-top: 20px;
+}
+.form .name {
+    width: 85%;
+} 
+.form .ml-5 {
+    margin-left: auto;
+}
+/* .form .name, .form .tempat__lahir {
+    display: inline-block;
+} */
+/* input[type="name"], input[type="email"], input[type="text"], input[type="password"] {
+    display: block;
+}
+input[type="date"] {
+    position: absolute;
+    bottom: 17%;
+    left: 45%;
+}
+.form .email {
+    display: inline-block;
+} */
+/* .form input {
+    outline: none; */
+    /* display: block; */
+    /* border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 40px;
+    width: 300px;
+    font-size: 15px;
+} */
+
+/* .form input:focus {
+    border: 1.5px solid #1f52f9;
+}
+.form label {
+    position: relative;
+    color: #555;
+    font-size: 15px;
+    pointer-events: none;
+    left: 20px;
+    top: -30px;
+    transition: .3s all;
+}
+input:focus ~label,
+input:valid ~label{
+    top: -49px;
+    left: 17px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 10px;
+    color: #1f52f9;
+} */
+
+.form .btn__save {
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #445e86;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.right .btn__save:hover {
+    color: #fdfeff;
+    background-color: #292d63;
+}
+/* .password.active {
+    display: flex;
+}
+.billing.active {
+    display: flex;
+}
+.profile.active {
+    display: flex;
+}
+.password {
+    display: none;
+}
+.billing {
+    display: none;
+} */

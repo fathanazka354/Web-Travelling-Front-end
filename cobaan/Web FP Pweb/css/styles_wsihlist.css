@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box !important;
+    /* padding: 0 !important; */
+    /* margin: 0 !important; */
+    transition: all .3s;
+    font-family: "Montserrat";
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    /* background-color: slateblue; */
+}
+
+
+/* Navabar Percbann */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav a img {
+    height: 60px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 20px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+nav ul li .home.active,
+nav ul li .destination:hover,
+nav ul li .testi:hover,
+nav ul li .wishlist:hover,
+nav ul li .home:hover {
+    color: #fff;
+    background-color: #92BDFF;
+}
+
+nav.black {
+    background: rgba(20, 25, 53, 0.99);
+    color: #fff;
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav.black a {
+    color: #fff;
+}
+
+nav.black a:hover {
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+
+nav .users .isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-27%, -10%);
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav .desti .isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-40%, -10%);
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav .desti:hover .isi {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .users:hover .isi {
+    opacity: 1;
+    visibility: visible;
+}
+
+ul .desti .isi::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 50%;
+    /* transform: translate(20px); */
+}
+
+ul .users .isi::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 65px;
+    /* transform: translate(20px); */
+}
+
+nav .desti .isi ul {
+    display: flex;
+}
+
+nav .users .isi ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .desti .isi ul li a:hover {
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+
+nav .users .isi ul li a:hover {
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+
+nav.black .isi ul li a {
+    /* border-bottom: 1px solid rgb(44, 44, 44); */
+    color: rgba(0, 0, 0, .7);
+}
+
+nav.black .users .isi {
+    width: 180px;
+}
+
+nav.black .desti .isi {
+    width: auto;
+}
+
+nav .wishlist.active {
+    color: #fff;
+    background-color: #92BDFF;
+}
+
+/* Navabar Percbann */
+
+
+/* Breadcrumb */
+.breadcrumb {
+    width: 100%;
+    height: 150px;
+    top: 0;
+    position: absolute;
+}
+
+.breadcrumb ul {
+    width: 30%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 100px;
+    left: -60px;
+}
+
+.breadcrumb ul li {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.breadcrumb ul li a {
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+}
+
+.cover {
+    height: 65vh;
+    width: 100%;
+    background-image: url('../asset/img/Yogya_jumbotron.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover h3 {
+    padding: 10px 15px;
+    color: rgb(59, 59, 59);
+    font-size: 2em;
+}
+
+
+/* content */
+.content {
+    padding: 10px;
+    /* margin-top: 150px; */
+}
+
+.display {
+    background-color: #92BDFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.content .judul h4 {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.content .judul p {
+    text-indent: 3em;
+    font-size: 1em;
+}
+
+.content .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content label {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.content .review__cont {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .review__cont .card {
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 90%;
+}
+
+.content .review__cont .card .star .fa-star {
+    font-size: 1em;
+}
+
+.content .review__cont h6 {
+    font-size: 1em;
+}
+
+.footer__section {
+    margin-top: -200px;
+    background-color: #DCEAFF;
+    /* top: 130%; */
+    /* left: 0; */
+    position: relative;
+    margin-top: 500px;
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- FOnts awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/stylessss_profile.css">
+
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./asset/img/brand.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <span><i class="fas fa-home"></i></span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span><i class="fas fa-plane-departure"></i></span>
+                            Destinations
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span><i class="fas fa-users"></i></span>
+                            Testimonial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span><i class="fas fa-heart"></i></span>
+                            Wishlist
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- form -->
+    <section class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: auto;">
+                        <img src="./asset/img/Yogya_jumbotron.png" class="card-img-top" alt="...">
+                        <div class="judul">
+                            <h4>Fathan</h4>
+                            <span>Profiles</span>
+                        </div>
+                        <div class="body">
+                            <div class="card" style="width: 100%;">
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item profile__btn" id="profile">Profiles</li>
+                                    <li class="list-group-item password__btn" id="password">Password</li>
+                                    <li class="list-group-item billing__btn" id="billing">Billing Address</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col right" id="content">
+                    <div class="profile">
+                        <h5>Profile Details</h5>
+                        <hr>
+                        <div class="img text-center">
+                            <img src="./asset/img/profile.jpg" class="rounded-circle" width="120px" height="120px"
+                                alt="">
+                        </div>
+                        <div class="sec__details mt-4">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="name">
+                                        <label for="first">First Name</label>
+                                        <input type="text" class="form-control" id="first" value="Abu" required>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="name ml-5">
+                                        <label for="last">Last Name</label>
+                                        <input type="text" class="form-control" id="last" value="Ridho" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="sec__contact">
+                            <h5>Contact Details</h5>
+                            <hr>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" value="Abu32@gmail.com" required>
+                            </div>
+                        </div>
+
+                        <div class="sec__date">
+                            <h5>Date Of birth</h5>
+                            <hr>
+                            <div class="date">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="tempat__lahir">
+                                            <label for="tempat">Tempat Lahir</label>
+                                            <input type="text" class="form-control" id="tempat" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="tempat__lahir">
+                                            <label for="date">Date</label>
+                                            <input type="date" class="form-control" id="date" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="button d-flex justify-content-end mb-4">
+                            <button class="btn__save mt-4">Save</button>
+                        </div>
+
+                    </div>
+
+                    <!-- Password -->
+
+
+                    <!-- Billing -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="./js/script5.js"></script>
+</body>
+
+</html>

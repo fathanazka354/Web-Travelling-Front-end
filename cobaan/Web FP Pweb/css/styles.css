@@ -1,0 +1,548 @@
+* {
+    box-sizing: border-box !important;
+    /* padding: 0 !important; */
+    /* margin: 0 !important; */
+    transition: all .3s;
+    font-family: "Montserrat";
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    /* background-color: slateblue; */
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 0 !important;
+    left: 0 !important;
+    margin-bottom: 0 ;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    z-index: 1000;
+    box-shadow: 2px 2px 20px rgba(0,0,0, .5);
+}*/
+.container {
+    padding: 10px 20px !important;
+}
+
+/* Navabar Percbann */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav a img {
+    height: 60px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 20px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+nav ul li .home.active,
+nav ul li .destination:hover,
+nav ul li .testi:hover,
+nav ul li .wishlist:hover,
+nav ul li .home:hover {
+    color: #fff;
+    background-color: #92BDFF;
+}
+
+nav.black {
+    background: rgba(20, 25, 53, 0.99);
+    color: #fff;
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav.black a {
+    color: #fff;
+}
+
+nav.black a:hover {
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+
+nav .users .isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-27%, -10%);
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav .desti .isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-40%, -10%);
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav .desti:hover .isi {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .users:hover .isi {
+    opacity: 1;
+    visibility: visible;
+}
+
+ul .desti .isi::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 50%;
+    /* transform: translate(20px); */
+}
+
+ul .users .isi::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 65px;
+    /* transform: translate(20px); */
+}
+
+nav .desti .isi ul {
+    display: flex;
+}
+
+nav .users .isi ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .desti .isi ul li a:hover {
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+
+nav .users .isi ul li a:hover {
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+
+nav.black .isi ul li a {
+    /* border-bottom: 1px solid rgb(44, 44, 44); */
+    color: rgba(0, 0, 0, .7);
+}
+
+nav.black .users .isi {
+    width: 180px;
+}
+
+nav.black .desti .isi {
+    width: auto;
+}
+
+/* Navabar Percbann */
+
+
+/* Chatbox */
+.btn-chat {
+    position: absolute;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    bottom: 2%;
+    right: 2%;
+    width: 20%;
+    z-index: 10000;
+    position: fixed;
+}
+
+.chatbox {
+    display: none;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1000;
+    background-color: aqua;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: fixed;
+}
+
+.form_container {
+    max-width: 400px;
+    padding: 10px;
+    background: white;
+}
+
+.form_container textarea {
+    width: 100%;
+    min-height: 200px;
+    border: none;
+    resize: none;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    background: #f1f1f1;
+    font-size: 15px;
+}
+
+.form-container textarea:focus {
+    background: #ddd;
+    outline: none;
+}
+
+.btn-send,
+.btn-close {
+    /* padding:; */
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn-send,
+.btn-close,
+.btn-chat:hover {
+    opacity: 1;
+}
+
+h2 {
+    background: rgb(27, 140, 206);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.cover {
+    height: 65vh;
+    width: 100%;
+    background-image: url('../asset/img/Yogya_jumbotron.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover h3 {
+    padding: 10px 15px;
+    color: rgb(59, 59, 59);
+    font-size: 2em;
+}
+
+.cover_jateng {
+    height: 65vh;
+    width: 100%;
+    background-image: url('../asset/img/borobudur_jumbotron.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover_jateng h3 {
+    padding: 10px 15px;
+    color: rgb(59, 59, 59);
+    font-size: 2em;
+}
+
+.category {
+    position: relative;
+    background-color: #DCEAFF;
+    margin-top: -40px;
+}
+
+.category .btn {
+    font-size: .8em;
+}
+
+.category .card,
+.list__yogya .card {
+    cursor: pointer;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+.destinasion__top .card:hover,
+.destinasion__icons .card:hover {
+    transform: translateY(-10px);
+}
+
+.destination__icons .card,
+.destinasion__top .card {
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    position: relative;
+    cursor: pointer;
+}
+
+.category .card:hover,
+.list__yogya .card:hover {
+    transform: translateY(-10px);
+}
+
+.destinasion__icons .card .badge,
+.destinasion__top .card .badge,
+.category .card .badge {
+    position: absolute;
+    top: 32%;
+    right: 0;
+    color: #fff;
+    width: 120px;
+    /* padding:10px;margin-bottom: 10px; */
+}
+
+.destinasion__icons .card h5,
+.destinasion__top .card h5,
+.category .card h5 {
+    font-size: 1.3em !important;
+    font-weight: 600;
+}
+
+.destinasion__icons .card-text .star,
+.destinasion__top .card-text .star,
+.category .card .star {
+    font-size: .8em;
+    color: rgb(241, 198, 7);
+}
+
+.destinasion__icons .card-text .reviews p,
+.destinasion__top .card-text .reviews p,
+.category .card .reviews p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.destinasion__icons .card-text .text-right,
+.destinasion__top .card-text .text-right,
+.category .card .card-text .text-right {
+    margin: 0;
+    /* padding: 0; */
+}
+
+.destinasion__icons .card-text .text-right h6,
+.destinasion__top .card-text .text-right h6,
+.category .card .card-text .text-right h6 {
+    /* margin: 0; */
+    /* padding: 0; */
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.destinasion__icons .card-text .text-right h5,
+.destinasion__top .card-text .text-right h5,
+.category .card .card-text .text-right h5 {
+    /* margin: 0; */
+    /* padding: 0; */
+    font-size: .85em;
+    font-weight: 500;
+}
+
+.destinasion__icons .card-text .text-right .mt-5,
+.destinasion__top .card-text .text-right .mt-5,
+.category .card .card-text .text-right .mt-5 {
+    margin-top: 50px;
+}
+
+.destinasion__icons .text-right h5,
+.destinasion__top .text-right h5,
+.category .card .text-right h5 {
+    margin-top: -15px !important;
+}
+
+
+/* FAQ */
+.section__FAQ {
+    width: 100%;
+    /* height: 30vh; */
+    position: relative;
+    margin-top: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq {
+    max-width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .7);
+    cursor: pointer;
+    transition: max-height .3s ease-in-out;
+    color: #262626;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 1.3rem;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    animation: fade .3s ease-in-out;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+}
+
+.faq.active .down {
+    transform: rotateX(180deg);
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: .9rem;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* .cont__faq {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.accordion-item{
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0, .5);
+}
+.accordion-link {
+    font-size: 1.6rem;
+    color: rgba(255,255,255, .8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.accordion-link ion-icon {
+    color: #e7d5ff;
+    padding: .5rem;
+}
+.accordion-link .remove {
+    display: none;
+}
+.answer {
+    position: relative;
+    transition: max-height 650ms;
+    background-color: #212838;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p {
+    font-size: 1.4rem;
+    color: rgba(255,255,255, .6);
+    padding: 2rem;
+} */
+/* FAQ */
+
+
+
+
+.card-body-1.active {
+    display: flex;
+}
+
+.card-body-2.active {
+    display: flex;
+}
+
+.card-body-3.active {
+    display: flex;
+}
+
+.footer__section {
+    margin-top: -200px;
+    background-color: #DCEAFF;
+    /* top: 130%; */
+    /* left: 0; */
+    position: relative;
+    margin-top: 500px;
+}

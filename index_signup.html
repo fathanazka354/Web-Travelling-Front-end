@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- FOnts awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles_signup.css">
+
+    <!-- lightslider -->
+    <link rel="stylesheet" href="./lightslider-master/src/css/lightslider.css">
+    <script src="./lightslider-master/src/js/lightslider.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-md-5 display kiri bg-dark">
+                <div class="video">
+                    <video src="./asset/video/2.mp4" class="vid" autoplay muted loop></video>
+                    <video src="./asset/video/1.mp4" class="vid" autoplay muted loop></video>
+                    <video src="./asset/video/3.mp4" class="vid" autoplay muted loop></video>
+                    <!-- <img src="./asset/img/background_free_cancel.png" alt=""> -->
+                    <!-- <iframe src="./asset/video/1.mp4" frameborder="0"></iframe> -->
+                </div>
+                <div class="judul mt-5">
+                    <h4>Start your journey by registering your data here</h4>
+                    <p>explore the world just by accessing our website, access anywhere anytime and under any conditions
+                    </p>
+                </div>
+                <div class="footer">
+                    <p><i class="far fa-copyright"></i> 2021 My Nusa Tour</p>
+                </div>
+            </div>
+
+            <div class="col display">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <div class="card-title"><img src="./asset/img/brand.png" alt=""></div>
+                        <form action="" name="">
+                            <div class="email">
+                                <input type="text" required="" autocomplete="off" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="password">
+                                <input type="password" id="input" required>
+                                <label>password</label>
+                                <a href="" class="eye" onclick="myFunction()">
+                                    <i id="hide1" class="fa fa-eye"></i>
+                                    <i id="hide2" class="fa fa-eye-slash"></i>
+                                </a>
+                            </div>
+                            <div class="password2">
+                                <input type="password" id="input2" required>
+                                <label>Confirm password</label>
+                                <a href="" class="eye2" onclick="myFunction2()">
+                                    <i id="hide3" class="fa fa-eye"></i>
+                                    <i id="hide4" class="fa fa-eye-slash"></i>
+                                </a>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <span>Remember me</span>
+                            </div>
+                            <button type="submit" class="button">
+                                <a href="./index_home.html" class="button">
+                                    Sign Up
+                                </a>
+                            </button>
+
+                        </form>
+                        <div class="link">Already Have Account? <a href="./index_login.html">Sign In</a> </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+    <script>
+        function stop() {
+            event.stopPropagation()
+            event.preventDefault()
+        }
+
+        function myFunction() {
+            const input = document.getElementById("input")
+            const hide1 = document.getElementById("hide1")
+            const hide2 = document.getElementById("hide2")
+
+            if (input.type === 'password') {
+                event.stopPropagation()
+                event.preventDefault()
+                input.type = "text"
+                hide1.style.display = "block"
+                hide2.style.display = "none"
+            } else {
+                event.stopPropagation()
+                event.preventDefault()
+                input.type = "password"
+                hide1.style.display = "none"
+                hide2.style.display = "block"
+            }
+        }
+
+        function myFunction2() {
+            const input = document.getElementById("input2")
+            const hide1 = document.getElementById("hide3")
+            const hide2 = document.getElementById("hide4")
+
+            if (input.type === 'password') {
+                event.stopPropagation()
+                event.preventDefault()
+                input.type = "text"
+                hide1.style.display = "block"
+                hide2.style.display = "none"
+            } else {
+                event.stopPropagation()
+                event.preventDefault()
+                input.type = "password"
+                hide1.style.display = "none"
+                hide2.style.display = "block"
+            }
+        }
+        $(document).ready(function () {
+            // alert("OK")
+            $('#adaptive').lightSlider({
+                adaptiveHeight: true,
+                item: 1,
+                slideMargin: 0,
+                loop: true,
+            });
+        });
+    </script>
+    <!-- <script src="./js/script51.js"></script> -->
+</body>
+
+</html>

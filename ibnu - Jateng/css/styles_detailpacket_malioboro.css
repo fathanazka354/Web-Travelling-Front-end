@@ -1,0 +1,731 @@
+* {
+    box-sizing: border-box !important;
+    /* padding: 0 !important; */
+    /* margin: 0 !important; */
+    transition: all .3s;
+    font-family: "Montserrat";
+}
+.container {
+    margin: 0 auto;
+    /* background-color: slateblue; */
+}
+/* Navabar Percbann */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .angka {
+    position: absolute;
+    color: #fff;
+    background-color: rgb(224, 128, 2);
+    /* padding: 1px; */
+    width: 15px;
+    height: 15px;
+    top: 31px;
+    /* left: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    right: 16%;
+    border-radius: 50%;
+    display: none;
+}
+nav.black .angka {
+    top: 22px;
+    right: 12.25%;
+}
+nav .angka.active {
+    display: block;
+}
+nav .logo {
+    float: left;
+}
+nav .nav_link img {
+    height: 60px;
+}
+nav .kanan {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li .nav_link {
+    line-height: 80px;
+    color: #0e0e0e;
+    font-weight: 600;
+    padding: 5px 20px;
+    display: inline;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+nav ul li .home.active,
+nav ul li .destination:hover,
+nav ul li .testi:hover,
+nav ul li .wishlist:hover,
+nav ul li .home:hover
+{
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+nav.black {
+    background: rgba(20, 25, 53, 0.99);
+    color: #fff;
+    height: 80px;
+    padding: 10px 50px;
+}
+nav.black .nav_link,
+nav.black a {
+    color: #fff;
+}
+nav.black a:hover {
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+nav .notif .notif_isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-50%, -5%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    font-size: .9em;
+    padding: auto;
+    box-sizing: border-box;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, .5);
+    opacity: 0; 
+    visibility: hidden;
+    display: none;
+    
+}
+/* nav .notif .notif_isi.active,
+nav .users .users_isi.active,
+nav .desti .isi.active
+ {
+    display: flex;
+} */
+nav .users .users_isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-27%, -12%) ;
+    background: rgb(250, 250, 250);
+    font-size: .9em;
+    width: auto;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+nav .desti .isi {
+    z-index: 1000;
+    position: absolute;
+    transform: translate(-40%, -12%) ;
+    background: #fff;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+nav .user:hover ~ .users_isi,
+nav .destination:hover ~ .isi,
+nav .notification:hover ~ .notif_isi {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+}
+nav .users_isi:hover,
+nav .isi:hover,
+nav .notif_isi:hover{
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+}
+.kanan .desti .isi::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 55%;
+    z-index: -1;
+}
+.kanan .notif .notif_isi::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -8px;
+    z-index: -1;
+    height: 20px;
+    background: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    left: 55%;
+    /* transform: translate(20px); */
+}
+.kanan .users .users_isi::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: -10px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 40%;
+    /* transform: translate(20px); */
+}
+nav .desti .isi {
+    display: flex;
+    justify-content: space-around;
+}
+nav .desti .isi span {
+    margin: 10px 10px; 
+}
+nav .desti .isi span a{
+    text-decoration: none;
+    color: #262626;
+    padding: 10px 15px;
+}
+nav .desti .isi  a:hover,
+nav .notification:hover,
+nav .user:hover
+{
+    background-color: #83a3d3;
+    color: rgb(255, 255, 255);
+}
+
+nav .users .users_isi .content_isi{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+nav .users .users_isi a {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+}
+nav .users .users_isi a span {
+    margin-right: 10px;
+}
+nav .users .users_isi a:hover{
+    background-color: #5e85c0;
+    color: #fff;
+}
+
+nav .notif_isi  a {
+    color: rgba(0,0,0, .7);
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 10px 20px;
+    align-items: center;
+    width: 100%;
+    transition: 0s;
+}
+nav .notif_isi a:hover {
+    background-color: #83a3d3;
+    color: #fff;
+}
+nav .notif_isi .display {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+nav .notif_isi a span{
+    font-weight: 500;
+    color: black;
+}
+nav .notif_isi a .small{
+    font-weight: 400;
+}
+
+nav .notif .notif_isi ul li a,
+nav .desti .isi ul li a ,
+nav .users .user_isi a{
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    /* margin: 10px; */
+}
+nav .users .user_isi a:hover,
+nav .desti .isi ul li a:hover,
+nav .notif .notif_isi ul li a:hover{
+    color: #fff !important;
+    background-color: #92BDFF;
+}
+
+/* Scroll */
+nav.black .desti .isi ul li a,
+nav.black .notif .isi ul li a,
+nav.black .users .isi ul li a{
+    /* border-bottom: 1px solid rgb(44, 44, 44); */
+    color: rgba(0,0,0, .7);
+}
+nav.black .users .isi {
+    width: 180px;
+}
+nav.black .desti .isi
+{
+    width: auto;
+}
+nav.black .notif .notif_isi {
+    width:300px;
+    transform: translate(-70%, -5%);
+}
+nav.black .notif .notif_isi::before {
+    /* transform: translateX(25%); */
+    left: 75%;
+}
+nav.black .users .users_isi a {
+    color: black;
+}
+nav .users .users_isi a {
+    color: black;
+}
+nav.black .notif .notif_isi ul,
+nav.black .notif_isi li,
+nav.black .notif_isi li a {
+    width: 100%;
+}
+/* Navabar Percbann */
+
+
+.breadcrumb {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* margin-top: 100px; */
+    background-color: rgb(235, 236, 238);
+}
+.breadcrumb ul {
+    width: 27%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 100px;
+    left: -60px;
+}
+.breadcrumb ul li {
+    font-size: 1em;
+    font-weight: 500;
+}
+.breadcrumb ul li a {
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+}
+.sec__jumbotron {
+    overflow: hidden;
+    position: relative;
+    top: -250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron {
+    width: 86% !important;
+    height: 65vh;
+    position: relative;
+    /* margin-top: !important; */
+    background-image: url("../asset/img/borobudur_jumbotron.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+}
+.backimg:hover {
+    transform: scale(1.01,1.01);
+}
+
+
+
+
+.content1 {
+    position: relative;
+    top: -260px;
+    
+}
+.content1 .star {
+    font-size: .9em;
+    color: rgb(241, 198, 7);
+    margin-bottom: 20px;
+}
+.content1 .left .icon {
+    font-size: 1.9em;
+}
+.content1 .left h6 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.content1 .left p {
+    font-size: .9em;
+    font-weight: 400;
+}
+.content1 .right .round {
+    background-color: #DCEAFF;
+    color: #000;
+    padding: 14px 20px;
+    border-radius: 10px;
+}
+.content1 .right p {
+    font-size: .9em;
+    font-size: 400;
+}
+.content1 .right h5 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.content1 .right .btn  {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    background-color: #445e86;
+}
+.content1 .right .btn:hover {
+    color: #fdfeff;
+    background-color: #292d63;
+}
+.content1 .left h4 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.category {
+    position: relative;
+    top: -220px;
+}
+.button__category {
+     position: absolute;
+     left: 12%;
+    margin-top: -20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button__category a {
+    padding: 5px;
+    background-color: rgb(23, 170, 196);
+    font-weight: 600;
+    color: #fFF;
+}
+.about.activ, .essential.activ, .gallery.activ, .review.activ, .price.activ{
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    background-color: #374c6b;
+}
+.button__category a {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: #87a0c5;
+}
+.button__category button:hover {
+    color: #fdfeff;
+    background-color: #292d63;
+}
+.category .round__category{
+    /* width: 85%; */
+    height: auto;
+    border-radius: 10px;
+    padding: 25px 25px;
+    background-color: #DCEAFF;
+}
+.category__list .round__category {
+    padding: 25px 30px;
+}
+.active{
+    background: #f0544f !important;
+}
+.about.activat, .price.activat, .essential.activat, .gallery.activat,.review.activat  {
+    display: block;
+}
+.about, .essential, .gallery, .review, .price {
+    display: none;
+}
+.round__category .about p{
+    text-indent: 3em;
+}
+
+
+.card:hover .love .fa-heart{
+    opacity: 1;
+    visibility: visible;
+}
+
+main .love {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+main .love .fa-heart {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+}
+main .love .fa-heart:hover {
+    color: rgb(255, 15, 175);
+}
+
+
+
+
+/* Gallery */
+.gallery img {
+    width: 100%;
+    margin-bottom: 20px;
+    filter: grayscale(50%);
+}
+.gallery img:hover {
+    transform: scale(1.1,1.1);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+/* Gallery */
+
+
+
+
+
+/* Review */
+.review__cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.review .card {
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+.review .card .header{
+    width: 100%;
+}
+.review .card {
+    width: 90%;
+}
+.review .card .star .fa-star {
+    color: rgb(241, 198, 7);
+}
+.card .tanggal {
+    width: 50%;
+}
+.card .card .tanggal {
+    display: flex;
+    justify-content: center;
+}
+.card .card .tanggal small, .card span {
+    color: rgb(94, 93, 93);
+
+}
+.card blockquote {
+    position: relative;
+    line-height: 1.4em;
+    font-style: italic;
+    margin-top: 10px;
+}
+.card blockquote::before, blockquote::after {
+    content: open-quote;
+    font-size: 60px;
+    color: #999;
+    line-height: 0;
+    position: relative;
+    top: 20px;
+}
+.card blockquote::after{
+    content: close-quote;
+}
+
+.review .card .star .fa-star{
+    font-size: 1em;
+}
+.review h6 {
+    font-size: 1em;
+}
+.review .btn {
+    padding: 10px 15px;
+    background-color: #445e86;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+
+/* Price */
+
+.price .form select, 
+.price .form input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgb(97, 97, 97);
+}
+.price .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price .form button,
+.price .table button {
+    padding: 10px 15px;
+    background-color: #445e86;
+    border-radius: 10px;
+    color: #fff;
+}
+.price .table {
+    margin-top: 20px;
+}
+
+
+
+
+.destination__popular {
+    margin-top: -100px;
+    background-color: #DCEAFF;
+    width: 100%;
+    height: 60vh;
+    padding-top: 70px;
+    text-align: center;
+}
+.destination__popular h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+.destination__popular .judul p {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.destination__popular hr {
+    width: 50%;
+    margin-bottom: 30px;
+}
+.destination__popular .card {
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0, .5);
+    position: relative;
+    cursor: pointer;
+}
+.destination__popular .card img {
+    height: 150px;
+}
+.destination__popular .card:hover {
+    transform: translateY(-10px);
+}
+.destination__popular .card .badge,
+.explore__section .card .badge {
+    position: absolute;
+    top: 32%;
+    right: 0;
+    color: #fff;
+    width: 120px;
+    /* padding:10px;margin-bottom: 10px; */
+}
+.destination__popular .card h5,
+.explore__section .card h5 {
+    font-size: 1.3em !important;
+    margin-top: -15px;
+    font-weight: 600;
+}
+.destination__popular .card-text .star,
+.explore__section .card-text .star {
+    font-size: .8em;
+    color: rgb(241, 198, 7);
+}
+.destination__popular .card-text .reviews p,
+.explore__section .card-text .reviews p {
+    font-size: .9em !important;
+    font-weight: 400;
+}
+.destination__popular .card-text .text-right,
+.explore__section .card-text .text-right {
+    margin: 0;
+    /* padding: 0; */
+}
+.destination__popular .card-text .text-right h6,
+.explore__section .card-text .text-right h6{
+    /* margin: 0; */
+    /* padding: 0; */
+    font-size: .9em;
+    font-weight: 500;
+    margin-top: -15px !important;
+}
+.destination__popular .card-text .text-right h5,
+.explore__section .card-text .text-right h5{
+    /* margin: 0; */
+    /* padding: 0; */
+    font-size: .9em !important;
+    font-weight: 500;
+}
+.destination__popular .card-text .text-right .mt-5, 
+.explore__section .card-text .text-right .mt-5{
+    margin-top: 50px;
+}
+.destination__popular .card-text .text-right h6, .card-text .text-right .top__p, .text-right h5
+, .explore__section h6,
+.explore__section .top__p, 
+.explore__section h5{
+    margin-top: -15px !important;
+}
+.destination__popular .btn {
+    margin-top: 15px;
+}
+
+
+
+
+.footer {
+    background-color: #DCEAFF;
+    /* top: 130%; */
+    /* left: 0; */
+    position: relative;
+    margin-top: 200px;
+}
+.footer a {
+    color: rgb(34, 34, 34);
+    margin-bottom: 10px;
+}
+.footer h5 {
+    font-weight: 600;
+}
+.footer p {
+    font-weight: 500;
+}
